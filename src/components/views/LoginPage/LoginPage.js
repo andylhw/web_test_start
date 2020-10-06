@@ -11,7 +11,7 @@ function LoginPage() {
     return (
 
 
-        <div style={{display:'flex', justifyContent:'center', alignItems:'center', width:'100%', height: '80vh'}}>
+        <div style={{display:'flex', justifyContent:'center',color:'white', alignItems:'center', width:'100%', height: '80vh'}}>
         <form style={{display:'flex', flexDirection:'column'}}>
             <label>Email </label>
             <input type="email" value onChange />

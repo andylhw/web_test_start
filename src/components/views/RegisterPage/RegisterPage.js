@@ -2,11 +2,14 @@ import React from 'react'
 const style = {
     color: 'white',
     border: '1px solid black',
+    backgroundColor: 'black',
+    opacity: 0.8,
 }
 function RegisterPage() {
     return (
-    <div style={style}>
+    <div>
         <ul>
+            <form style={style}>
         <h2>Link of useful websites</h2>
             <ul>
                 <li><a href='https://github.com/andylhw'><h3>Github</h3></a> </li>
@@ -15,7 +18,9 @@ function RegisterPage() {
                 <li><a href='https://www.youtube.com'><h3>Youtube</h3></a></li>
                 <li><a href='https://myclass.ssu.ac.kr'><h3>SSU MyClass</h3></a></li>
             </ul>
+            </form>
         </ul>
+
     </div>
 
     )

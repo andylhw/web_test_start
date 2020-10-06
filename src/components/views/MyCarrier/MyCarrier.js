@@ -6,6 +6,8 @@ const style_title = {
     justifyContent:'flex-start',
     alignItems: 'flex-start',
     flexDirection:'column', 
+    backgroundColor: 'black',
+    opacity: 0.8,
 }
 
 const style_content = {
@@ -19,11 +21,13 @@ const style_content = {
 
 function MyCarrier() {
     return (
-        <div style={style_title}>
-            <form>
-                <ul><h1>carrier page</h1></ul>
+        <div>
+        <ul>
+            <form style={style_title}>
+                <h1>carrier page</h1>
             </form>
-            <ul>   
+            
+            <form style={style_title}>
                 <h2>뭘 했는가(2010~)</h2>
                 <h3>
                 <ul>
@@ -42,7 +46,8 @@ function MyCarrier() {
                 </ul>
 
                 </h3>
-            </ul>
+            </form>
+        </ul>
         </div>
     )
 }

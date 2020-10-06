@@ -39,6 +39,7 @@ const Container = styled.div`
     ),
     url(https://source.unsplash.com/random/1920x1080);
   background-size: cover;
+  z-index: -1;
 `;
 const Input = styled.input`
   position: absolute;
@@ -59,7 +60,8 @@ function App() {
     <Container>
     <Router>
       <ul>
-      <div style={{border: '1px solid white',}}>
+      <div style={{border: '1px solid white',backgroundColor: 'black',
+    opacity: 0.8,}}>
       <h1 style={{color:'white'}}>Page of lhw</h1>
       <header>
         <Link to="/">
