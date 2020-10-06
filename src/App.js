@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component, Fragment} from 'react';
 import styled from "styled-components"; 
 import {
     BrowserRouter as Router,
@@ -47,6 +47,7 @@ const Input = styled.input`
   width: 190px;
   height: 33px;
   padding: 3px;
+  border: '1px solid white';
   background: transparent;
   outline: none;
   border: none;
@@ -58,7 +59,7 @@ function App() {
     <Container>
     <Router>
       <ul>
-      <div>
+      <div style={{border: '1px solid white',}}>
       <h1 style={{color:'white'}}>Page of lhw</h1>
       <header>
         <Link to="/">

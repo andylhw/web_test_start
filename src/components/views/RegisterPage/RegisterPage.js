@@ -6,7 +6,8 @@ const style = {
 function RegisterPage() {
     return (
     <div style={style}>
-        <h2>Link of my favorite websites</h2>
+        <ul>
+        <h2>Link of useful websites</h2>
             <ul>
                 <li><a href='https://github.com/andylhw'><h3>Github</h3></a> </li>
                 <li><a href='https://inflearn.com'><h3>inflearn: way to learn Node.js</h3></a></li>
@@ -14,7 +15,9 @@ function RegisterPage() {
                 <li><a href='https://www.youtube.com'><h3>Youtube</h3></a></li>
                 <li><a href='https://myclass.ssu.ac.kr'><h3>SSU MyClass</h3></a></li>
             </ul>
-        </div>
+        </ul>
+    </div>
+
     )
 }
 

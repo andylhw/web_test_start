@@ -9,7 +9,7 @@ const style_title = {
     border: '1px solid white',
 }
 
-const style2 = {
+const style_content = {
     display: 'flex',
     color: 'white',
     justifyContent:'flex-start',
@@ -22,12 +22,12 @@ function LandingPage() {
     <div>
     <form style={style_title}>
     <h1>이화원의 메인페이지</h1></form>
-    <form style={style2}>
-        <h2>testing</h2>
+    <form style={style_content}>
+        <h2>메인페이지입니다.</h2>
         
     </form>
     <form>
-        테스트2
+        <h1>테스트2</h1>
     </form>
     </div>
     )
