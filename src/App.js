@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styled from "styled-components"; 
 import {
     BrowserRouter as Router,
     Switch,
@@ -9,24 +10,64 @@ import {
 import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage';
 import RegisterPage from './components/views/RegisterPage/RegisterPage';
-  
-
+const btnStyle = {
+  color: "white",
+  background: "grey",
+  padding: ".375rem .75rem",
+  border: "1px solid teal",
+  borderRadius: ".25rem",
+  fontSize: "1rem",
+  lineHeight: 1.5,
+}
+// class App extends React.Component{
+//   render(){
+//     return <Container></Container>;
+//   }
+// }
+const Container = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0.1) 10%,
+      rgba(20, 20, 20, 0.7) 70%,
+      rgba(20, 20, 20, 1)
+    ),
+    url(https://source.unsplash.com/random/1920x1080);
+  background-size: cover;
+`;
+const Input = styled.input`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 190px;
+  height: 33px;
+  padding: 3px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+`;
 function App() {
     return (
-      
+    <Container>
     <Router>
       <ul>
       <div>
       
       <header>
         <Link to="/">
-          <button>메인 화면</button>
+          <button style={btnStyle}>메인 화면</button>
         </Link>
         <Link to="/login">
-          <button>추가 화면 1</button>
+          <button style={btnStyle}>추가 화면 1</button>
         </Link>
         <Link to="/Register">
-          <button>추가 화면 2</button>
+          <button style={btnStyle}>유용한 Link</button>
         </Link>
       </header>
       </div>
@@ -40,6 +81,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      </Container>
     )
 }
 
