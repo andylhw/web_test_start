@@ -10,6 +10,7 @@ import {
 import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage';
 import RegisterPage from './components/views/RegisterPage/RegisterPage';
+import MyCarrier from './components/views/MyCarrier/MyCarrier';
 const btnStyle = {
   color: "white",
   background: "grey",
@@ -58,16 +59,19 @@ function App() {
     <Router>
       <ul>
       <div>
-      
+      <h1 style={{color:'white'}}>Page of lhw</h1>
       <header>
         <Link to="/">
           <button style={btnStyle}>메인 화면</button>
         </Link>
-        <Link to="/login">
-          <button style={btnStyle}>추가 화면 1</button>
+        <Link to="/Carrier">
+          <button style={btnStyle}>이력</button>
         </Link>
         <Link to="/Register">
           <button style={btnStyle}>유용한 Link</button>
+        </Link>
+        <Link to="/login">
+          <button style={btnStyle}>로그인 페이지 연습</button>
         </Link>
       </header>
       </div>
@@ -75,6 +79,7 @@ function App() {
         <div>
 
           <Switch>
+            <Route exact path="/carrier" component={MyCarrier} />
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/register" component={RegisterPage} />

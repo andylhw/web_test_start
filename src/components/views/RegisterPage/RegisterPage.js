@@ -1,6 +1,5 @@
 import React from 'react'
 const style = {
-    backgroundColor: 'black',
     color: 'white',
     border: '1px solid black',
 }
