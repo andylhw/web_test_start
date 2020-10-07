@@ -27,11 +27,12 @@ function LandingPage() {
     <form style={style_title}>
     <h1>이화원의 메인페이지</h1></form>
     <form style={style_content}>
-        <h2>메인페이지입니다.</h2>
+        <h2>
+            숭실대학교 소프트웨어학부 2학년에 재학중인 이화원입니다. 
+            <br></br>
+            많은것을 배우고 싶고, 현재는 웹 프로그래밍과 깃허브로 협업하는 법을 배우고 있습니다.
+        </h2>
         
-    </form>
-    <form>
-        <h1>테스트2</h1>
     </form>
     </ul>
     </div>

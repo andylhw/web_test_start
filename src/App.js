@@ -11,6 +11,7 @@ import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage';
 import RegisterPage from './components/views/RegisterPage/RegisterPage';
 import MyCarrier from './components/views/MyCarrier/MyCarrier';
+import HobbyPage from './components/views/HobbyPage/HobbyPage';
 const btnStyle = {
   color: "white",
   background: "grey",
@@ -70,6 +71,9 @@ function App() {
         <Link to="/Carrier">
           <button style={btnStyle}>이력</button>
         </Link>
+        <Link to="/hobby">
+          <button style={btnStyle}>취미</button>
+        </Link>
         <Link to="/Register">
           <button style={btnStyle}>유용한 Link</button>
         </Link>
@@ -86,6 +90,7 @@ function App() {
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/register" component={RegisterPage} />
+            <Route exact path="/hobby" component={HobbyPage} /> 
           </Switch>
         </div>
       </Router>
