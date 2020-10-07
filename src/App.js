@@ -38,7 +38,7 @@ const Container = styled.div`
       rgba(20, 20, 20, 0.7) 70%,
       rgba(20, 20, 20, 1)
     ),
-    url(https://source.unsplash.com/random/1920x1080);
+    url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Hong_Kong_Night_view.jpg);
   background-size: cover;
   z-index: -1;
 `;
@@ -63,8 +63,9 @@ function App() {
       <ul>
       <div style={{border: '1px solid white',backgroundColor: 'black',
     opacity: 0.8,}}>
-      <h1 style={{color:'white'}}>Page of lhw</h1>
+      <h1 style={{color:'white'}}><center>Page of lhw</center></h1>
       <header>
+        <center>
         <Link to="/">
           <button style={btnStyle}>메인 화면</button>
         </Link>
@@ -80,6 +81,7 @@ function App() {
         <Link to="/login">
           <button style={btnStyle}>로그인 페이지 연습</button>
         </Link>
+        </center>
       </header>
       </div>
       </ul>
